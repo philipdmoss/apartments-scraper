@@ -224,9 +224,9 @@ def prettify_text(data):
     # format it nicely: remove trailing spaces
     data = data.strip()
     # format it nicely: encode it, removing special symbols
-    data = data.encode('utf8', 'ignore')
+    data = data.encode('utf-8', 'ignore')
 
-    return str(data).encode('utf-8')
+    return data
 
 
 def get_images(soup, fields):
